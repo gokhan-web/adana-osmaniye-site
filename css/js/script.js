@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 // Yükleme barı animasyonu (%25 Osmaniye)
 window.addEventListener('load', () => {
     const bar = document.getElementById('osmaniye-progress');
-    setTimeout(() => { // 0.5s gecikme ile animasyon
+    setTimeout(() => {
         bar.style.width = '25%';
         bar.textContent = '25%';
     }, 500);
