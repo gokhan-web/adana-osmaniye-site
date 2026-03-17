@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
 
     elements.forEach(el => {
         const elementTop = el.getBoundingClientRect().top;
-        if(elementTop < screenPosition) {
+        if(elementTop < screenPosition){
             el.style.animationPlayState = 'running';
         }
     });
