@@ -17,24 +17,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: #000; /* siyah üst kısım */
     padding: 5px 20px;
 }
 
 .top-banner img.ataturk-photo {
-    height: 50px;
+    height: 60px; /* sol Atatürk resmi boyutu */
     border-radius: 5px;
 }
 
 .top-banner img.ataturk-sign {
-    height: 30px;
+    height: 40px; /* sağ mini imza */
 }
 
 /* Başlık ve açıklama */
 header h1, header p {
-    position: relative;
-    z-index: 1;
     margin-top: 10px;
+    text-align: center;
     color: #333;
 }
 
