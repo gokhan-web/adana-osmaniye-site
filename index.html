@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adana & Osmaniye</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adana & Osmaniye Tanıtımı</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Başlık -->
-    <header>
-        <h1 class="fade-in">Adana & Osmaniye</h1>
-        <p class="fade-in delay-1">Güneyin güzelliklerini keşfedin!</p>
-    </header>
 
-    <!-- Adana Bölümü -->
-    <section class="city slide-in" id="adana">
-        <h2>Adana</h2>
-        <img class="fade-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/71/14/21/adana-merkez-camii.jpg?h=500&s=1&w=500" alt="Adana Manzarası">
-        <p>Adana, lezzetli kebapları ve tarihi yerleri ile ünlüdür.</p>
-    </section>
+<!-- Başlık Bölümü -->
+<header>
+    <h1 class="fade-in">Adana & Osmaniye</h1>
+    <p class="fade-in delay-1">Güneyin güzelliklerini keşfedin!</p>
+</header>
 
-    <!-- Osmaniye Bölümü -->
-    <section class="city slide-in delay-1" id="osmaniye">
-        <h2>Osmaniye</h2>
-        <img class="fade-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/98/f2/d3/known-as-hierapolis-in.jpg?h=400&s=1&w=600" alt="Osmaniye Manzarası">
-        <p>Osmaniye, doğal güzellikleri ve antik kalıntıları ile dikkat çeker.</p>
-    </section>
+<!-- Adana Bölümü -->
+<section class="city slide-in" id="adana">
+    <h2>Adana</h2>
+    <div class="gallery">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/71/14/21/adana-merkez-camii.jpg?h=500&s=1&w=500" alt="Sabancı Merkez Camii">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/06/b4/b6/adana-merkez-camii.jpg?h=500&s=1&w=600" alt="Adana Tarihi">
+        <img src="https://c.regencyholidays.com/blog/2025/12/191744_Adana%20Turkey.webp" alt="Adana Genel">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b3/b2/0e/varda-alman-koprusu.jpg?h=-1&s=1&w=500" alt="Varda Köprüsü">
+    </div>
+    <p>Adana, lezzetli kebapları, tarihi camileri ve köprüleri ile ünlüdür. Şehir hem tarih hem modern yaşamı bir arada sunar.</p>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- Osmaniye Bölümü -->
+<section class="city slide-in delay-1" id="osmaniye">
+    <h2>Osmaniye</h2>
+    <div class="gallery">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/98/f2/d3/known-as-hierapolis-in.jpg?h=400&s=1&w=600" alt="Kastabala Antik Kenti">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/cf/fe/49/caption.jpg?h=500&s=1&w=500" alt="Osmaniye Manzarası">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Osmaniye_City_View.JPG/640px-Osmaniye_City_View.JPG" alt="Osmaniye Genel">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/97/f2/aa/osmaniye_nature.jpg?h=400&s=1&w=600" alt="Osmaniye Doğa">
+    </div>
+    <p>Osmaniye, doğal güzellikleri, yaylaları ve antik kalıntıları ile tarihi ve doğayı bir arada sunan bir şehirdir.</p>
+</section>
+
+<!-- Kaydırmalı Galeri (Opsiyonel) -->
+<section class="slider slide-in delay-2">
+    <h2>Öne Çıkan Görseller</h2>
+    <div class="slider-wrapper">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/71/14/21/adana-merkez-camii.jpg?h=500&s=1&w=500" alt="Adana">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/98/f2/d3/known-as-hierapolis-in.jpg?h=400&s=1&w=600" alt="Osmaniye">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b3/b2/0e/varda-alman-koprusu.jpg?h=-1&s=1&w=500" alt="Varda Köprüsü">
+    </div>
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
