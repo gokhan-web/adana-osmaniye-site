@@ -1,35 +1,44 @@
+/* Genel Stil */
 body {
-    margin:0;
+    margin: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom, #ffe5b4, #fff);
     color: #333;
 }
 
-header { text-align:center; padding:50px 20px; }
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
 
-h1,h2 { margin:10px 0; }
-p { font-size:1.1em; line-height:1.5; }
+h1,h2,h3 { margin: 10px 0; }
+p { font-size: 1.1em; line-height: 1.5; }
 
 img {
-    max-width:100%;
-    border-radius:15px;
-    display:block;
-    margin:20px auto;
-    transition: transform .5s;
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.5s;
 }
 img:hover { transform: scale(1.05); }
 
-.city { padding:50px 20px; text-align:center; }
+/* Şehir Bölümü */
+.city {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Galeri */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
 }
-.gallery img {
-    width: calc(50% - 15px);
-}
+.gallery img { width: calc(50% - 15px); }
 
+/* Slider */
 .slider-wrapper {
     display: flex;
     overflow-x: auto;
@@ -38,19 +47,48 @@ img:hover { transform: scale(1.05); }
 }
 .slider-wrapper img { width: 300px; flex-shrink: 0; }
 
-.fade-in { opacity:0; animation: fadeIn 2s forwards; }
-.fade-in.delay-1 { animation-delay:1s; }
-.slide-in { transform: translateY(50px); opacity:0; animation: slideIn 1.5s forwards; }
-.slide-in.delay-1 { animation-delay:0.8s; }
-.slide-in.delay-2 { animation-delay:1.5s; }
+/* Animasyonlar */
+.fade-in { opacity: 0; animation: fadeIn 2s forwards; }
+.fade-in.delay-1 { animation-delay: 1s; }
+.slide-in { transform: translateY(50px); opacity: 0; animation: slideIn 1.5s forwards; }
+.slide-in.delay-2 { animation-delay: 1.5s; }
 
-@keyframes fadeIn { to { opacity:1; } }
-@keyframes slideIn { to { transform:translateY(0); opacity:1; } }
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes slideIn { to { transform: translateY(0); opacity: 1; } }
 
-@media (max-width:768px){
-    header { padding:30px 10px; }
-    .city { padding:30px 10px; }
-    p { font-size:1em; }
+/* Yükleme Barı */
+.loading-bar-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.loading-bar {
+    width: 80%;
+    height: 25px;
+    background-color: #ddd;
+    margin: 10px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #f39c12;
+    border-radius: 15px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    transition: width 2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header { padding: 30px 10px; }
+    .city { padding: 30px 10px; }
+    p { font-size: 1em; }
     .gallery img { width: calc(100% - 10px); }
     .slider-wrapper img { width: 200px; }
 }
